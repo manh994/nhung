@@ -1,0 +1,119 @@
+<style>
+.trongsuot {
+	opacity: 0.5;
+	
+	width: 100px;
+	height: 100px;
+	background: #f00;
+	}
+.bogoc {
+	border-radius: 20px;
+	
+	border: 2px solid #000;
+	width: 100px;
+	height: 100px;
+	}
+.gradient {
+	background: linear-gradient(-90deg, red, yellow);
+	width: 100px;
+	height: 100px;
+
+}
+.dobong {
+	box-shadow: 2px 3px 3px #000;
+	text-shadow: 2px 3px 3px #000;
+	
+	width: 100px;
+	height: 100px;
+	}
+.transition {
+    background: red;
+    transition: width 2s;
+	width: 100px;
+	height: 100px;
+	}
+.transition:hover {
+	width: 200px;
+	}
+.transform {
+	background: red;
+	width: 100px;
+	height: 100px;
+}
+.transform:hover {
+	transform: rotate(20deg);
+}
+.animation {
+	width: 100px;
+	height: 100px;
+	background: red;
+	animation-name: example;
+    animation-duration: 4s;
+}
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+</style>
+
+<!-- form -->
+<h1>Form</h1>
+
+<form method="POST">
+<label>text</label>
+	<input type="text" placeholder="text"/><br/>
+<label>email</label>
+	<input type="email" placeholder="email"/><br/>
+<label>number</label>
+	<input type="number" placeholder="number"/><br/>
+<label>password</label>
+	<input type="password" placeholder="pass"/><br/>
+<label>date</label>
+	<input type="date" placeholder="date"/><br/>
+<label>datetime</label>
+	<input type="text" placeholder="datetime"/><br/>
+<label>month</label>
+	<input type="month" placeholder="month"/><br/>
+<label>week</label>
+	<input type="week" placeholder="week"/><br/>
+<label>tel</label>
+	<input type="tel" placeholder="tel"/><br/>
+<label>datetime-local</label>
+	<input type="datetime-local" placeholder="datetime-local"/><br/>
+<label>url</label>
+	<input type="url" placeholder="url"/><br/>
+<label>search</label>
+	<input type="search" placeholder="search"/><br/>
+<label>color</label>
+	<input type="color" placeholder="color"/><br/>
+	<input type="submit" value="submit"/><input type="reset" value="reset"/><br/>
+	<button>button</button>
+</form>
+
+<!-- audio -->
+<h1>Audio</h1>
+<audio controls src=""></audio><br/>
+<!-- video -->
+<h1>Video</h1>
+<video controls src=""></video>
+
+<!-- canvas -->
+<h1>Canvas</h1>
+<canvas id="myCanvas" width="100" height="100" style="border:1px solid #000000;">
+</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(50,50,40,0,2*Math.PI);
+ctx.stroke();
+</script>
+
+
+<div class="trongsuot">Trong suốt</div>
+<div class="bogoc">Bo góc</div>
+<div class="dobong">Đổ bóng</div>
+<div class="gradient">chuyển màu</div>
+<div class="transition">Transition</div>
+<div class="transform">Transform</div>
+<div class="animation">Animation</div>
